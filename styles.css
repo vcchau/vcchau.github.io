@@ -1,0 +1,28 @@
+h1 {
+  align: left;
+}
+
+/* Table styles */
+table {
+  margin: 0 auto;
+}
+table, th, td {
+  width: 50%;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 10px;
+}
+th {
+  text-align: left;
+}
+
+/* Top bar */
+.topnav { 
+ font-size: 20px;
+}
+.topnav-right {
+  float: right;
+  font-size: 20px;
+}
