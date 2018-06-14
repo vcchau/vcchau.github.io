@@ -4,10 +4,13 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" type="text/css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <link href="styles.css" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+
   <title>Victor Chau</title>
 </head>
 
@@ -27,146 +30,154 @@
 </div>
 
 <body>
-  <div id="home">
+  <section id="home">
     <div class="hero-image">
       <div class="hero-text">
-        <h1>Hi, I'm Victor Chau</h1>
-        <p>Let's program the future together</p>
-        <button onclick="window.location='#about';">About Me</button>
+        <h2 id="title">
+          <span>Hi, I'm</span>
+        </h2>
+        <p id="name">Victor Chau</p>
+        <p style=font-style:italic>Let's program the future together.</p>
+        </br>
+        </br>
+        </br>
+        </br>
+        <button class="button home" onclick="smoothScroll(document.getElementById('about'))">ABOUT ME</button>
       </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2>Welcome to my website. Stay tuned as I expand my knowledge and make exciting new changes to this site!</h2>
+      <p>
+        My name is Victor Chau and I am currently a 3rd year Computer Science student at the University of Texas at Austin. I've
+        enjoyed my experiences so far and look forward to learning new things every day. This is my first personal website
+        so stay tuned to all the changes that are to come.My name is Victor Chau and I am currently a 3rd year Computer Science
+        student at the University of Texas at Austin. I've enjoyed my experiences so far and look forward to learning new
+        things every day.
+
+        <h1 align="center">Notable Coursework</h1>
+        <table class="table table-bordered">
+          <tbody>
+            <tr>
+              <th>Semester</th>
+              <th>Course Name</th>
+            </tr>
+
+            <tr>
+              <td rowspan="2">Summer 2018</td>
+              <td>Software Engineering</td>
+            </tr>
+            <tr>
+              <td>Behavioral Ethics in the Digital Age</td>
+            </tr>
+
+            <tr>
+              <td>Spring 2018</td>
+              <td>Computer Organization and Architecture</td>
+            </tr>
+
+            <tr>
+              <td rowspan="4">Fall 2017</td>
+              <td>Data Structures</td>
+            </tr>
+            <tr>
+              <td>Discrete Math For Computer Science</td>
+            </tr>
+            <tr>
+              <td>Matrices and Matrix Calculations</td>
+            </tr>
+            <tr>
+              <td>Probability</td>
+            </tr>
+
+            <tr>
+              <td>Spring 2017</td>
+              <td>Introduction to Programming</td>
+            </tr>
+
+            <tr>
+              <td>Spring 2016</td>
+              <td>Differential Equations with Linear Algebra</td>
+            </tr>
+
+            <tr>
+              <td>Fall 2015</td>
+              <td>Sequences, Series, and Multivariable Calculus</td>
+            </tr>
+          </tbody>
+        </table>
+        <h1 align="center">Notable Coursework</h1>
+        <table class="table table-bordered">
+          <tbody>
+            <tr>
+              <th>Semester</th>
+              <th>Course Name</th>
+            </tr>
+
+            <tr>
+              <td rowspan="2">Summer 2018</td>
+              <td>Software Engineering</td>
+            </tr>
+            <tr>
+              <td>Behavioral Ethics in the Digital Age</td>
+            </tr>
+
+            <tr>
+              <td>Spring 2018</td>
+              <td>Computer Organization and Architecture</td>
+            </tr>
+
+            <tr>
+              <td rowspan="4">Fall 2017</td>
+              <td>Data Structures</td>
+            </tr>
+            <tr>
+              <td>Discrete Math For Computer Science</td>
+            </tr>
+            <tr>
+              <td>Matrices and Matrix Calculations</td>
+            </tr>
+            <tr>
+              <td>Probability</td>
+            </tr>
+
+            <tr>
+              <td>Spring 2017</td>
+              <td>Introduction to Programming</td>
+            </tr>
+
+            <tr>
+              <td>Spring 2016</td>
+              <td>Differential Equations with Linear Algebra</td>
+            </tr>
+
+            <tr>
+              <td>Fall 2015</td>
+              <td>Sequences, Series, and Multivariable Calculus</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </p>
     </div>
-    <section id="about">
-      <div class="container">
-        <h2>Welcome to my website. Stay tuned as I expand my knowledge and make exciting new changes to this site!</h2>
-        <p>
-          My name is Victor Chau and I am currently a 3rd year Computer Science student at the University of Texas at Austin. I've
-          enjoyed my experiences so far and look forward to learning new things every day. This is my first personal website
-          so stay tuned to all the changes that are to come.My name is Victor Chau and I am currently a 3rd year Computer
-          Science student at the University of Texas at Austin. I've enjoyed my experiences so far and look forward to learning
-          new things every day.
+  </section>
 
-          <h1 align="center">Notable Coursework</h1>
-          <table class="table table-bordered">
-            <tbody>
-              <tr>
-                <th>Semester</th>
-                <th>Course Name</th>
-              </tr>
+  <section id="blog">
+    <div class="container">
+      <p>Insert script for blog posts here</p>
+    </div>
+  </section>
 
-              <tr>
-                <td rowspan="2">Summer 2018</td>
-                <td>Software Engineering</td>
-              </tr>
-              <tr>
-                <td>Behavioral Ethics in the Digital Age</td>
-              </tr>
-
-              <tr>
-                <td>Spring 2018</td>
-                <td>Computer Organization and Architecture</td>
-              </tr>
-
-              <tr>
-                <td rowspan="4">Fall 2017</td>
-                <td>Data Structures</td>
-              </tr>
-              <tr>
-                <td>Discrete Math For Computer Science</td>
-              </tr>
-              <tr>
-                <td>Matrices and Matrix Calculations</td>
-              </tr>
-              <tr>
-                <td>Probability</td>
-              </tr>
-
-              <tr>
-                <td>Spring 2017</td>
-                <td>Introduction to Programming</td>
-              </tr>
-
-              <tr>
-                <td>Spring 2016</td>
-                <td>Differential Equations with Linear Algebra</td>
-              </tr>
-
-              <tr>
-                <td>Fall 2015</td>
-                <td>Sequences, Series, and Multivariable Calculus</td>
-              </tr>
-            </tbody>
-          </table>
-          <h1 align="center">Notable Coursework</h1>
-          <table class="table table-bordered">
-            <tbody>
-              <tr>
-                <th>Semester</th>
-                <th>Course Name</th>
-              </tr>
-
-              <tr>
-                <td rowspan="2">Summer 2018</td>
-                <td>Software Engineering</td>
-              </tr>
-              <tr>
-                <td>Behavioral Ethics in the Digital Age</td>
-              </tr>
-
-              <tr>
-                <td>Spring 2018</td>
-                <td>Computer Organization and Architecture</td>
-              </tr>
-
-              <tr>
-                <td rowspan="4">Fall 2017</td>
-                <td>Data Structures</td>
-              </tr>
-              <tr>
-                <td>Discrete Math For Computer Science</td>
-              </tr>
-              <tr>
-                <td>Matrices and Matrix Calculations</td>
-              </tr>
-              <tr>
-                <td>Probability</td>
-              </tr>
-
-              <tr>
-                <td>Spring 2017</td>
-                <td>Introduction to Programming</td>
-              </tr>
-
-              <tr>
-                <td>Spring 2016</td>
-                <td>Differential Equations with Linear Algebra</td>
-              </tr>
-
-              <tr>
-                <td>Fall 2015</td>
-                <td>Sequences, Series, and Multivariable Calculus</td>
-              </tr>
-            </tbody>
-          </table>
-
-        </p>
-      </div>
-    </section>
-
-    <section id="blog">
-      <div class="container">
-        <p>Insert script for blog posts here</p>
-      </div>
-    </section>
-
-    <footer>
-      <div class="container" id="contact">
-        <h3>
-          <span>CONTACT ME</span>
-        </h3>
-        <a href="https://www.linkedin.com/in/victor-chau-a0712314b/" class="fa fa-linkedin-square" alt="LinkedIn"></a>
-        <a href="https://github.com/vcchau" class="fa fa-github"></a>
-      </div>
-    </footer>
+  <footer>
+    <div class="container" id="contact">
+      <h3>
+        <span>CONTACT ME</span>
+      </h3>
+      <a href="https://www.linkedin.com/in/victor-chau-a0712314b/" target="_blank" class="fa fa-linkedin-square" alt="LinkedIn"></a>
+      <a href="https://github.com/vcchau" target="_blank" class="fa fa-github"></a>
+    </div>
+  </footer>
 
 </body>
 
