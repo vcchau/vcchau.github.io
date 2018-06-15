@@ -4,17 +4,44 @@ body {
   padding-bottom: 50px;
   font-family: "Trebuchet", sans-serif;
 }
+p {
+  font-size: 17px;
+}
 #about {
   padding-top: 50px;
-  scroll-behavior: smooth; 
+  text-align: center;
 }
-
+p {
+  margin-top: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+ul {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+h2 {
+  text-align: center;
+  border-bottom: 1px solid black;
+  height: 20px;
+}
+h2 span {
+  padding: 0 20px;
+  background-color: white;
+}
+h3 {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+h5 {
+  margin-left: 100px;
+  margin-right: 100px;
+}
 #blog {
-  background-color: #e4e5da;
-  scroll-behavior: smooth; 
+  /* background-color: #f2f4f7; */
 }
-section {
-  scroll-behavior: smooth;
+#resume {
+  
 }
 
 /* Formatting hero image */
